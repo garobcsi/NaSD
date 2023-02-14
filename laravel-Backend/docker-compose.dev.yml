@@ -1,0 +1,5 @@
+version: '3'
+services:
+  app:
+    volumes:
+      - "./docker/php/config/php.ini-development:${PHP_INI_DIR}/php.ini:ro"
