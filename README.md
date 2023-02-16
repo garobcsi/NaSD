@@ -2,9 +2,9 @@
 
 ### Quick navigation
 
-* **[🏗 Building the application](#🏗-building-the-application)**
+* **[:building_construction: Building the application](#building_construction-building-the-application)**
 
-# 🏗 Building the application
+# :building_construction: Building the application
 
 ### Quick navigation
 
