@@ -60,3 +60,20 @@
 8. Migrate Database `docker compose exec app php artisan migrate --seed`
 
 ### Building C#
+
+###### Production
+
+0. Requires [Laravel Productions](#production-1) to be done first
+1. Open folder named `csharp-Admin`
+2. Open `.sln` in `Visual Studio 19`
+3. Left to the `Start` button there is a `dropdown menu` select `Release`
+4. Press `Start`
+
+
+###### Devopment
+
+0. Requires [Laravel Devopment](#devopment-1) to be done first
+1. Open folder named `csharp-Admin`
+2. Open `.sln` in `Visual Studio 19`
+3. Left to the `Start` button there is a `dropdown menu` select `Debug`
+4. Press `Start`
