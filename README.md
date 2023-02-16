@@ -40,7 +40,7 @@
 ### Building Laravel
 
 ###### Production
-0. Requires [Vue Pruduction](#production) to be done first
+0. Requires [Vue Production](#production) to be done first
 1. Open project root directory
 2. Copy `.env-example` to `.env`
 3. Run `docker-compose up -d`
