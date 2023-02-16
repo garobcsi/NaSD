@@ -27,7 +27,7 @@ services:
       context: ./docker/php
       dockerfile: Dockerfile
     ports:
-      - "${VITE_PORT}:${VITE_PORT}"
+      - "${APP_PORT}:${APP_PORT}"
     volumes:
       - ./:/www:rw
       # - ./docker/php/home:/home/phpdocker:rw

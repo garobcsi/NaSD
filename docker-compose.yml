@@ -3,6 +3,13 @@ networks:
 
 services:
   #Vue
+  nginx:
+    image: nginx
+    volumes:
+      - "./vue-Frontend/dist:/usr/share/nginx/html"
+      - "./docker/conf.d:/etc/nginx/conf.d"
+    ports:
+      - ${VITE_PORT}:80
   #Laravel
   web:
     image: nginx:1.23-alpine
@@ -24,7 +31,7 @@ services:
       context: ./laravel-Backend/docker/php
       dockerfile: Dockerfile
     ports:
-      - "${VITE_PORT}:${VITE_PORT}"
+      - "${APP_PORT}:${APP_PORT}"
     volumes:
       - "./laravel-Backend:/www:rw"
       - "./laravel-Backend/docker/php/config/php.ini-production:${PHP_INI_DIR}/php.ini:ro"
