@@ -2,9 +2,9 @@
 
 ### Quick navigation
 
-* **[🏗 Building the application](#🏗-building-the-application)**
+* **[🏗 Building the application](#x)**
 
-# 🏗 Building the application
+# 🏗 Building the application{#x}
 
 ### Quick navigation
 
