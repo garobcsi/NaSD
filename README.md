@@ -2,9 +2,9 @@
 
 ### Quick navigation
 
-* **[:building_construction: Building the application](#building_construction-building-the-application)**
+* **[🏗 Building the application](#building_construction-building-the-application)**
 
-# :building_construction: Building the application
+# 🏗 Building the application
 
 ### Quick navigation
 
@@ -40,6 +40,7 @@
 ### Building Laravel
 
 ###### Production
+
 0. Requires [Vue Production](#production) to be done first
 1. Open project root directory
 2. Copy `.env-example` to `.env`
@@ -50,6 +51,7 @@
 7. Migrate Database `docker compose exec app php artisan migrate --seed`
 
 ###### Devopment
+
 1. Open project root directory
 2. Copy `.env-example` to `./src/laravel-Backend/.env`
 3. Open folder named `laravel-Backend`
@@ -68,7 +70,6 @@
 2. Open `.sln` in `Visual Studio 19`
 3. Left to the `Start` button there is a `dropdown menu` select `Release`
 4. Press `Start`
-
 
 ###### Devopment
 
