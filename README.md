@@ -24,7 +24,7 @@
 
 ###### Production
 
-1. Open folder named `vue-Frontend`
+1. Open folder named `src/vue-Frontend`
 2. Install node_modules `npm i`
 3. Build application `npm run build`
 4. Open project root directory
@@ -33,7 +33,7 @@
 
 ###### Devopment
 
-1. Open folder named `vue-Frontend`
+1. Open folder named `src/vue-Frontend`
 2. Install node_modules `npm i`
 3. Build application `npm run dev`
 
@@ -51,7 +51,7 @@
 
 ###### Devopment
 1. Open project root directory
-2. Copy `.env-example` to `./laravel-Backend/.env`
+2. Copy `.env-example` to `./src/laravel-Backend/.env`
 3. Open folder named `laravel-Backend`
 4. Run `docker compose -f docker-compose.yml -f docker-compose.dev.yml  up -d`
 5. Install vendor `docker compose exec app composer install`
