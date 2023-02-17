@@ -2,7 +2,7 @@
 
 ### Quick navigation
 
-* **[🏗 Building the application](#building_construction-building-the-application)**
+* **[🏗 Building the application](#🏗-building-the-application)**
 
 # 🏗 Building the application
 
