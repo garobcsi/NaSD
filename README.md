@@ -4,7 +4,7 @@
 
 * **[🏗 Building the application](#x)**
 
-# 🏗 Building the application{#x}
+# 🏗 Building the application{x}
 
 ### Quick navigation
 
