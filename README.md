@@ -2,9 +2,11 @@
 
 ### Quick navigation
 
-* **[🏗 Building the application](#x)**
+* **[:building_construction: Building the application](#building_construction-building-the-application)**
 
-# 🏗 Building the application {x}
+* **[:busts_in_silhouette: Made By](#busts_in_silhouette-made-by)**
+
+# :building_construction: Building the application
 
 ### Quick navigation
 
@@ -78,3 +80,9 @@
 2. Open `.sln` in `Visual Studio 19`
 3. Left to the `Start` button there is a `dropdown menu` select `Debug`
 4. Press `Start`
+
+# :busts_in_silhouette: Made By
+
+- Gáspár Róbert
+- Palánki Szűcs Donát
+- Szarvas Márton
