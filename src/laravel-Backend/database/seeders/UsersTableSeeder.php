@@ -21,25 +21,15 @@ class UsersTableSeeder extends Seeder
         \DB::table('users')->insert(array (
             0 => 
             array (
-                'created_at' => '2023-02-19 12:11:31',
+                'created_at' => '2023-02-19 14:21:16',
                 'email' => 'example@gmail.com',
                 'email_verified_at' => NULL,
                 'id' => 1,
+                'last_login' => NULL,
                 'name' => 'garobcsi',
-                'password' => '$2y$10$MO/E0ygo0Mgi7Ilix3Sriu3X1hDT0brSWq.KECxhIDt9ibXNx4cBu',
+                'password' => '$2y$10$LjIvLl5C5NQYOUk759JfMOdFamubVfPF4tuzjrjeNQdZvuTsIgrHS',
                 'remember_token' => NULL,
-                'updated_at' => '2023-02-19 12:11:31',
-            ),
-            1 => 
-            array (
-                'created_at' => '2023-02-19 12:14:49',
-                'email' => 'examplea@gmail.com',
-                'email_verified_at' => NULL,
-                'id' => 2,
-                'name' => 'garobcsia',
-                'password' => '$2y$10$0SRpev7VLP2uf9CtIqCfIOttP2Obfgz92HrGKbWasbUFkqUjMNe1K',
-                'remember_token' => NULL,
-                'updated_at' => '2023-02-19 12:14:49',
+                'updated_at' => '2023-02-19 14:21:16',
             ),
         ));
         
