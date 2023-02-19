@@ -2,9 +2,17 @@
 
 ### Quick navigation
 
+* **[:keyboard: Useful Commands](#keyboard-useful-commands)**
+
 * **[:building_construction: Building the application](#building_construction-building-the-application)**
 
 * **[:busts_in_silhouette: Made By](#busts_in_silhouette-made-by)**
+
+# :keyboard: Useful Commands
+
+### Laravel
+
+- Save existing database to seeder: `docker compose exec app php artisan iseed users,personal_access_tokens`
 
 # :building_construction: Building the application
 
