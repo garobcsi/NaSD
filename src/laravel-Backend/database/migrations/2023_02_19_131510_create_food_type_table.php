@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name',35);
             $table->integer("health_amount");
             $table->integer("nutritious_amount");
+            $table->integer("energy_amount");
         });
     }
 
