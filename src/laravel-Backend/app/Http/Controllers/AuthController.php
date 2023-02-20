@@ -11,7 +11,9 @@ class AuthController extends Controller
     public function authenticate(AuthenticateRequest $request) {
         if (!$request->wantsJson()) return;
         if(Auth::attempt($request->validated())) {
-            $token = Auth::user()->createToken('auth_token')->plainTextToken;
+            $user = Auth::user();
+            $user->tokens()->where('tokenable_id', $user->id)->delete();
+            $token = $user->createToken('auth_token')->plainTextToken;
             return response()->json([
                 "data" => [ "token" => $token ]
             ],200);
