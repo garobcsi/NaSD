@@ -98,7 +98,7 @@ class FoodTypeSeeder extends Seeder
                 "nutritious_amount" =>4,
             ],
             [
-                "id" => 10,
+                "id" => 11,
                 "name" => "Életerő bomba",
                 "type" => "gyógyszer",
                 "health_amount" => 30,
@@ -106,7 +106,7 @@ class FoodTypeSeeder extends Seeder
                 "nutritious_amount" =>0,
             ],
             [
-                "id" => 11,
+                "id" => 12,
                 "name" => "Energia bomba",
                 "type" => "gyógyszer",
                 "health_amount" => -5,
@@ -114,7 +114,7 @@ class FoodTypeSeeder extends Seeder
                 "nutritious_amount" =>0,
             ],
             [
-                "id" => 12,
+                "id" => 13,
                 "name" => "Kalória bomba",
                 "type" => "gyógyszer",
                 "health_amount" => -5,

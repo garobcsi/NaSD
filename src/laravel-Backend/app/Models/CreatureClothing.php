@@ -9,4 +9,5 @@ class CreatureClothing extends Pivot
 {
     use HasFactory;
     protected $table = "creature_clothing";
+    public $timestamps = false;
 }

@@ -14,26 +14,26 @@ class PersonalAccessTokensTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('personal_access_tokens')->delete();
-
+        
         \DB::table('personal_access_tokens')->insert(array (
-            0 =>
+            0 => 
             array (
                 'abilities' => '["*"]',
-                'created_at' => '2023-02-19 14:21:43',
+                'created_at' => '2023-02-20 14:52:36',
                 'expires_at' => NULL,
                 'id' => 1,
-                'last_used_at' => '2023-02-19 14:33:14',
+                'last_used_at' => '2023-02-20 14:55:12',
                 'name' => 'auth_token',
-                'token' => 'd37f2ba8d50e5ee59a156cb62d8fb0161d7079d0aa648dae02424ca9c2d3d2a6',
+                'token' => 'bb866b298fb2e4207fa6ad4ab763209efb25336eb4f835b287c7666980fcdfe6',
                 'tokenable_id' => 1,
                 'tokenable_type' => 'App\\Models\\User',
-                'updated_at' => '2023-02-19 14:33:14',
-            )
+                'updated_at' => '2023-02-20 14:55:12',
+            ),
         ));
-
-
+        
+        
     }
 }

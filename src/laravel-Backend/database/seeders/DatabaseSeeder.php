@@ -20,5 +20,7 @@ class DatabaseSeeder extends Seeder
         ]);
         $this->call(UsersTableSeeder::class);
         $this->call(PersonalAccessTokensTableSeeder::class);
+        $this->call(CreatureTableSeeder::class);
+        $this->call(FoodTableSeeder::class);
     }
 }
