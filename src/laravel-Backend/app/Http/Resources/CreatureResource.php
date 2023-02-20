@@ -17,22 +17,12 @@ class CreatureResource extends JsonResource
      */
     public function toArray($request)
     {
-        $user = auth('sanctum')->user();
         return [
-            "user" => [
-                "name" => $user->name,
-                "email" => $user->email,
-                "last_login" => PersonalAccessToken::all()->where('id',$user->id)->first()->last_used_at,
-            ],
-            "creature" => [
-                "money" => $this->money,
-                "health" => $this->health,
-                "mood" => $this->mood,
-                "energy" => $this->energy,
-                "cleanness" => $this->cleanness
-            ],
-            
-
+            "money" => $this->money,
+            "health" => $this->health,
+            "mood" => $this->mood,
+            "energy" => $this->energy,
+            "cleanness" => $this->cleanness
         ];
     }
 }
