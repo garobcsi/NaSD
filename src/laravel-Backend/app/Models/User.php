@@ -41,4 +41,8 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function creature() {
+        $this->hasMany(Creature::class,'user_id','id');
+    }
 }

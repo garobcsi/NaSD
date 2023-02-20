@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Food extends Model
 {
+    protected $fillable = ["creature_id","food_type","amount"];
     public function foodtype() {
         $this->hasOne(FoodType::class,'id','food_type_id');
     }

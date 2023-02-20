@@ -16,6 +16,8 @@ return new class extends Migration
         Schema::create('food_type', function (Blueprint $table) {
             $table->id();
             $table->string('name',35);
+            $table->integer("health_amount");
+            $table->integer("nutritious_amount");
         });
     }
 

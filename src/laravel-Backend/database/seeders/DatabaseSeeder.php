@@ -14,6 +14,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        $this->call([
+            FoodTypeSeeder::class,
+            ClothingType::class,
+        ]);
         $this->call(UsersTableSeeder::class);
         $this->call(PersonalAccessTokensTableSeeder::class);
     }
