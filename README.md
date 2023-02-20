@@ -49,6 +49,13 @@
 
 ### Building Laravel
 
+###### Api Users
+
+- Username: `garobcsi`
+- Email: `example@gmail.com`
+- Password: `example_password`
+- Api User Token: `8rEAONHZp23l4jvzUAREWJMIIcmsB9OGWhfpaAE2`
+
 ###### Production
 
 0. Requires [Vue Production](#production) to be done first
