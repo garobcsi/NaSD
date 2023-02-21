@@ -9,7 +9,7 @@ class Clothing extends Model
 {
     protected $table = "clothing";
     public $timestamps = false;
-    public function Creature() {
-        $this->belongsToMany(Creature::class)->using(CreatureClothing::class);
+    public function creatureclothing() {
+        $this->hasMany(CreatureFood::class,'clothing_id','id');
     }
 }

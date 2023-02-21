@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('creature_food', function (Blueprint $table) {
             $table->id();
             $table->foreignId('creature_id');
-            $table->foreignId('food_type_id');
+            $table->foreignId('food_id');
             $table->integer('amount');
         });
     }

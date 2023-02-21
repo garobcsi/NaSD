@@ -7,11 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class CreatureFood extends Model
 {
-    protected $table = "food";
+    protected $table = "creature_food";
     public $timestamps = false;
-    protected $fillable = ["creature_id","food_type_id","amount"];
+    protected $fillable = ["creature_id","food_id","amount"];
     public function foodtype() {
-        $this->hasOne(Food::class,'id','food_type_id');
+        $this->hasOne(Food::class,'id','food_id');
     }
     public function creature() {
         $this->hasOne(Creature::class,'id','creature_id');

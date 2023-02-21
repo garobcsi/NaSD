@@ -31,7 +31,7 @@ class RegisterController extends Controller
             $id = $i->id;
             CreatureFood::create([
                 "creature_id" => $creatureid,
-                "food_type_id" => $id,
+                "food_id" => $id,
                 "amount" => 0,
             ]);
         }

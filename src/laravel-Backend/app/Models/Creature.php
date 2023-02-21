@@ -14,7 +14,10 @@ class Creature extends Model
     public function food() {
         $this->hasMany(CreatureFood::class,'creature_id','id');
     }
-    public function clothing() {
-        $this->belongsToMany(Clothing::class)->using(CreatureClothing::class);
+    public function creatureclothing() {
+        $this->hasMany(CreatureClothing::class,'creature_id','id');
+    }
+    public function user() {
+        $this->hasOne(User::class,'id','user_id');
     }
 }

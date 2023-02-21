@@ -43,6 +43,6 @@ class User extends Authenticatable
     ];
 
     public function creature() {
-        $this->hasMany(Creature::class,'user_id','id');
+        $this->hasOne(Creature::class,'user_id','id');
     }
 }
