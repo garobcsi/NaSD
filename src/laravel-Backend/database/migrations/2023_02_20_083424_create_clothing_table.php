@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name',25);
             $table->string('type',15);
             $table->string('color',20);
+            $table->integer('price');
         });
     }
 //

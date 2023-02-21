@@ -20,6 +20,7 @@ return new class extends Migration
             $table->integer("health_amount");
             $table->integer("energy_amount");
             $table->integer("hunger_amount");
+            $table->integer('price');
         });
     }
 

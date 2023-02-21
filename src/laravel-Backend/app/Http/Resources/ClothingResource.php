@@ -18,7 +18,8 @@ class ClothingResource extends JsonResource
             "id" => $this->clothing->id,
             "name" => $this->clothing->name,
             "type" => $this->clothing->type,
-            "color" => $this->clothing->color
+            "color" => $this->clothing->color,
+            "price" => $this->clothing->price
         ];
     }
 }

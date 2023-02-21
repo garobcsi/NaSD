@@ -23,6 +23,7 @@ class FoodSeeder extends Seeder
                 "health_amount" => 2,
                 "energy_amount" => 0,
                 "hunger_amount" =>15,
+                "price" => 0
             ],
             [
                 "id" => 2,
@@ -31,6 +32,7 @@ class FoodSeeder extends Seeder
                 "health_amount" => 5,
                 "energy_amount" => 0,
                 "hunger_amount" =>10,
+                "price" => 0
             ],
             [
                 "id" => 3,
@@ -39,6 +41,7 @@ class FoodSeeder extends Seeder
                 "health_amount" => 5,
                 "energy_amount" => 0,
                 "hunger_amount" =>15,
+                "price" => 0
             ],
             [
                 "id" => 4,
@@ -47,6 +50,7 @@ class FoodSeeder extends Seeder
                 "health_amount" => -1,
                 "energy_amount" => 0,
                 "hunger_amount" =>30,
+                "price" => 0
             ],
             [
                 "id" => 5,
@@ -56,6 +60,7 @@ class FoodSeeder extends Seeder
                 "health_amount" => -1,
                 "energy_amount" => 0,
                 "hunger_amount" =>30,
+                "price" => 0
             ],
             [
                 "id" => 6,
@@ -64,6 +69,7 @@ class FoodSeeder extends Seeder
                 "health_amount" => -1,
                 "energy_amount" => 0,
                 "hunger_amount" =>30,
+                "price" => 0
             ],
             [
                 "id" => 7,
@@ -72,6 +78,7 @@ class FoodSeeder extends Seeder
                 "health_amount" => -1,
                 "energy_amount" => 30,
                 "hunger_amount" =>1,
+                "price" => 0
             ],
             [
                 "id" => 8,
@@ -80,6 +87,7 @@ class FoodSeeder extends Seeder
                 "health_amount" => -3,
                 "energy_amount" => 45,
                 "hunger_amount" =>2,
+                "price" => 0
             ],
             [
                 "id" => 9,
@@ -88,6 +96,7 @@ class FoodSeeder extends Seeder
                 "health_amount" => 2,
                 "energy_amount" => 15,
                 "hunger_amount" =>2,
+                "price" => 0
             ],
             [
                 "id" => 10,
@@ -96,6 +105,7 @@ class FoodSeeder extends Seeder
                 "health_amount" => 4,
                 "energy_amount" => 5,
                 "hunger_amount" =>4,
+                "price" => 0
             ],
             [
                 "id" => 11,
@@ -104,6 +114,7 @@ class FoodSeeder extends Seeder
                 "health_amount" => 30,
                 "energy_amount" => 0,
                 "hunger_amount" =>0,
+                "price" => 0
             ],
             [
                 "id" => 12,
@@ -112,6 +123,7 @@ class FoodSeeder extends Seeder
                 "health_amount" => -5,
                 "energy_amount" => 30,
                 "hunger_amount" =>0,
+                "price" => 0
             ],
             [
                 "id" => 13,
@@ -120,6 +132,7 @@ class FoodSeeder extends Seeder
                 "health_amount" => -5,
                 "energy_amount" => 0,
                 "hunger_amount" =>30,
+                "price" => 0
             ],
         ]);
     }
