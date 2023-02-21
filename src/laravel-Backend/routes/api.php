@@ -35,9 +35,11 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::put('/creature',[CreatureController::class,'update'])->name('creature.put');
 
     Route::get('/clothing',[ClothingController::class,'index'])->name('clothing');
+    Route::get('/clothing/{id}',[ClothingController::class,'show'])->name('clothing.show');
     Route::post('/clothing',[ClothingController::class,'store'])->name('clothing.store');
 
     Route::get('/food',[FoodController::class,'index'])->name('food');
+    Route::get('/food/{id}',[FoodController::class,'show'])->name('food.show');
     Route::put('/food/{id}',[FoodController::class,'update'])->name('food.store');
 });
 
