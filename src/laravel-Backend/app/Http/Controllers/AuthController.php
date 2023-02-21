@@ -3,11 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\AuthenticateRequest;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
+    /**
+     * @param AuthenticateRequest $request
+     * @return JsonResponse|void
+     */
     public function authenticate(AuthenticateRequest $request) {
         if (!$request->wantsJson()) return;
         if(Auth::attempt($request->validated())) {

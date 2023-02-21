@@ -10,7 +10,7 @@ class CreatureFood extends Model
     protected $table = "creature_food";
     public $timestamps = false;
     protected $fillable = ["creature_id","food_id","amount"];
-    public function foodtype() {
+    public function food() {
         return $this->hasOne(Food::class,'id','food_id');
     }
     public function creature() {

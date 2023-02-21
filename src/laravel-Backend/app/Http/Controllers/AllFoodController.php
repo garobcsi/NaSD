@@ -2,35 +2,36 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Resources\AllClothingResource;
-use App\Models\Clothing;
+use App\Http\Resources\AllFoodResource;
+use App\Models\Food;
 use Illuminate\Http\Request;
 
-class AllClothingController extends Controller
+class AllFoodController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
+     * @return AllFoodResource
      */
-    public function index() {
-        return AllClothingResource::collection(Clothing::all());
+    public function index()
+    {
+        return new AllFoodResource(Food::all());
     }
 
     /**
      * Display the specified resource.
      *
      * @param  int  $id
-     * @return AllClothingResource|\Illuminate\Http\JsonResponse
+     * @return AllFoodResource|\Illuminate\Http\JsonResponse
      */
     public function show($id)
     {
-        $i = Clothing::find($id);
+        $i = Food::find($id);
         if ($i == null) return response()->json([
             "data" => [
                 "message" => "Ez az adat nem létezik !"
             ]
         ],404);
-        return new AllClothingResource($i);
+        return new AllFoodResource($i);
     }
 }

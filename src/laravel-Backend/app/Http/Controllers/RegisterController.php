@@ -7,11 +7,16 @@ use App\Models\Creature;
 use App\Models\CreatureFood;
 use App\Models\Food;
 use App\Models\User;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
 class RegisterController extends Controller
 {
+    /**
+     * @param RegisterRequest $request
+     * @return JsonResponse|void
+     */
     public function register(RegisterRequest $request) {
         if (!$request->wantsJson()) return;
         $data = $request->validated();

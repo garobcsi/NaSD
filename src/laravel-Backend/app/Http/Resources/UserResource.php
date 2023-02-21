@@ -2,8 +2,10 @@
 
 namespace App\Http\Resources;
 
+use App\Models\Creature;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Laravel\Sanctum\PersonalAccessToken;
+use function GuzzleHttp\Promise\all;
 
 class UserResource extends JsonResource
 {
@@ -20,7 +22,7 @@ class UserResource extends JsonResource
             "name" => $this->name,
             "email" => $this->email,
             "email_verified_at" => $this->email_verified_at,
-            "last_login" => PersonalAccessToken::all()->where('id',$this->id)->first()->last_used_at,
+            "last_login" => Creature::all()->where('user_id',auth('sanctum')->user()->id)->firstOrFail()->updated_at,
             "created_at" => $this->created_at,
             "updated_at" => $this->updated_at,
         ];
