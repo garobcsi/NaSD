@@ -22,6 +22,7 @@ Route::post('/register',[RegisterController::class,'register'])->name('auth.regi
 
 Route::middleware(['auth:sanctum'])->group(function () {
     Route::get('/creature',[CreatureController::class,'index'])->name('creature');
+    Route::put('/creature',[CreatureController::class,'update'])->name('creature.put');
 });
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
