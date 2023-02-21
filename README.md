@@ -12,7 +12,7 @@
 
 ### Laravel
 
-- Save existing database to seeder: `docker compose exec app php artisan iseed users,personal_access_tokens`
+- Save existing database to seeder: `docker compose exec app php artisan iseed users,personal_access_tokens,food,creature_clothing,creature`
 
 # :building_construction: Building the application
 
