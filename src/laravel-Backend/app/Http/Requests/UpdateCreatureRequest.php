@@ -26,6 +26,7 @@ class UpdateCreatureRequest extends FormRequest
         return [
             "money"=> ['required','min:0','integer'],
             "health"=> ['required','min:0','max:100','integer'],
+            "hunger"=> ['required','min:0','max:100','integer'],
             "mood"=> ['required','min:0','max:100','integer'],
             "energy"=> ['required','min:0','max:100','integer'],
             "cleanness"=> ['required','min:0','max:100','integer']

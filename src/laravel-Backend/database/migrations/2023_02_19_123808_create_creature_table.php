@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id');
             $table->integer('money');
+            $table->integer('hunger');
             $table->integer('health'); # 0-100
             $table->integer('mood');
             $table->integer('energy');

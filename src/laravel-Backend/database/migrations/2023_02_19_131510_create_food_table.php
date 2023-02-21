@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('type',20);
             $table->integer("health_amount");
             $table->integer("energy_amount");
-            $table->integer("nutritious_amount");
+            $table->integer("hunger_amount");
         });
     }
 

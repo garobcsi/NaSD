@@ -18,9 +18,9 @@ class DatabaseSeeder extends Seeder
             FoodSeeder::class,
             ClothingType::class,
         ]);
-        $this->call(UsersTableSeeder::class);
         $this->call(PersonalAccessTokensTableSeeder::class);
-        $this->call(CreatureTableSeeder::class);
+        $this->call(UsersTableSeeder::class);
         $this->call(CreatureFoodTableSeeder::class);
+        $this->call(CreatureTableSeeder::class);
     }
 }

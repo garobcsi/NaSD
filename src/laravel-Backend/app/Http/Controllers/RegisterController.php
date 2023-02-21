@@ -22,6 +22,7 @@ class RegisterController extends Controller
             "user_id" => $userid,
             "money" => 0,
             "health" =>100,
+            "hunger" =>100,
             "mood" => 100,
             "energy" => 100,
             "cleanness" => 100,

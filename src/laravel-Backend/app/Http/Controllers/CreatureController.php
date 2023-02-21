@@ -34,6 +34,7 @@ class CreatureController extends Controller
         $findData = Creature::all()->where('user_id',auth('sanctum')->user()->id)->firstOrFail();
         $findData->money = $data["money"];
         $findData->health = $data["health"];
+        $findData->hunger = $data["hunger"];
         $findData->mood = $data["mood"];
         $findData->energy = $data["energy"];
         $findData->cleanness = $data["cleanness"];

@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 class Creature extends Model
 {
     protected $table = "creature";
-    protected $fillable = ["user_id","money","health","mood","energy","cleanness"];
+    protected $fillable = ["user_id","money","hunger","health","mood","energy","cleanness"];
     public $timestamps = true;
     public function food() {
         return $this->hasMany(CreatureFood::class,'creature_id','id');

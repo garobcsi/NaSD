@@ -22,7 +22,7 @@ class FoodSeeder extends Seeder
                 "type" => "étel",
                 "health_amount" => 2,
                 "energy_amount" => 0,
-                "nutritious_amount" =>15,
+                "hunger_amount" =>15,
             ],
             [
                 "id" => 2,
@@ -30,7 +30,7 @@ class FoodSeeder extends Seeder
                 "type" => "étel",
                 "health_amount" => 5,
                 "energy_amount" => 0,
-                "nutritious_amount" =>10,
+                "hunger_amount" =>10,
             ],
             [
                 "id" => 3,
@@ -38,7 +38,7 @@ class FoodSeeder extends Seeder
                 "type" => "étel",
                 "health_amount" => 5,
                 "energy_amount" => 0,
-                "nutritious_amount" =>15,
+                "hunger_amount" =>15,
             ],
             [
                 "id" => 4,
@@ -46,7 +46,7 @@ class FoodSeeder extends Seeder
                 "type" => "étel",
                 "health_amount" => -1,
                 "energy_amount" => 0,
-                "nutritious_amount" =>30,
+                "hunger_amount" =>30,
             ],
             [
                 "id" => 5,
@@ -55,7 +55,7 @@ class FoodSeeder extends Seeder
                 "type" => "étel",
                 "health_amount" => -1,
                 "energy_amount" => 0,
-                "nutritious_amount" =>30,
+                "hunger_amount" =>30,
             ],
             [
                 "id" => 6,
@@ -63,7 +63,7 @@ class FoodSeeder extends Seeder
                 "type" => "étel",
                 "health_amount" => -1,
                 "energy_amount" => 0,
-                "nutritious_amount" =>30,
+                "hunger_amount" =>30,
             ],
             [
                 "id" => 7,
@@ -71,7 +71,7 @@ class FoodSeeder extends Seeder
                 "type" => "ital",
                 "health_amount" => -1,
                 "energy_amount" => 30,
-                "nutritious_amount" =>1,
+                "hunger_amount" =>1,
             ],
             [
                 "id" => 8,
@@ -79,7 +79,7 @@ class FoodSeeder extends Seeder
                 "type" => "ital",
                 "health_amount" => -3,
                 "energy_amount" => 45,
-                "nutritious_amount" =>2,
+                "hunger_amount" =>2,
             ],
             [
                 "id" => 9,
@@ -87,7 +87,7 @@ class FoodSeeder extends Seeder
                 "type" => "ital",
                 "health_amount" => 2,
                 "energy_amount" => 15,
-                "nutritious_amount" =>2,
+                "hunger_amount" =>2,
             ],
             [
                 "id" => 10,
@@ -95,7 +95,7 @@ class FoodSeeder extends Seeder
                 "type" => "ital",
                 "health_amount" => 4,
                 "energy_amount" => 5,
-                "nutritious_amount" =>4,
+                "hunger_amount" =>4,
             ],
             [
                 "id" => 11,
@@ -103,7 +103,7 @@ class FoodSeeder extends Seeder
                 "type" => "gyógyszer",
                 "health_amount" => 30,
                 "energy_amount" => 0,
-                "nutritious_amount" =>0,
+                "hunger_amount" =>0,
             ],
             [
                 "id" => 12,
@@ -111,7 +111,7 @@ class FoodSeeder extends Seeder
                 "type" => "gyógyszer",
                 "health_amount" => -5,
                 "energy_amount" => 30,
-                "nutritious_amount" =>0,
+                "hunger_amount" =>0,
             ],
             [
                 "id" => 13,
@@ -119,7 +119,7 @@ class FoodSeeder extends Seeder
                 "type" => "gyógyszer",
                 "health_amount" => -5,
                 "energy_amount" => 0,
-                "nutritious_amount" =>30,
+                "hunger_amount" =>30,
             ],
         ]);
     }

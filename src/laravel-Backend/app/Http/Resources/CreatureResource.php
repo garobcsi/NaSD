@@ -20,6 +20,7 @@ class CreatureResource extends JsonResource
         return [
             "money" => $this->money,
             "health" => $this->health,
+            "hunger" => $this->hunger,
             "mood" => $this->mood,
             "energy" => $this->energy,
             "cleanness" => $this->cleanness
