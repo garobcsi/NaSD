@@ -35,6 +35,6 @@ class RegisterController extends Controller
                 "amount" => 0,
             ]);
         }
-        return response()->json(["data" => ["message" => "Sikeres Regisztráció"]],200);
+        return response()->json(["data" => ["message" => "Sikeres Regisztráció !"]],200);
     }
 }

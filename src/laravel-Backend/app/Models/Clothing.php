@@ -10,6 +10,6 @@ class Clothing extends Model
     protected $table = "clothing";
     public $timestamps = false;
     public function creatureclothing() {
-        $this->hasMany(CreatureFood::class,'clothing_id','id');
+        return $this->hasMany(CreatureFood::class,'clothing_id','id');
     }
 }

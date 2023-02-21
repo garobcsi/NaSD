@@ -11,9 +11,9 @@ class CreatureClothing extends Model
     protected $fillable = ["creature_id","clothing_id"];
     public $timestamps = false;
     public function creature() {
-        $this->hasOne(Creature::class,'id','creature_id');
+        return $this->hasOne(Creature::class,'id','creature_id');
     }
     public function clothing() {
-        $this->hasOne(Clothing::class,'id','clothing_id');
+        return $this->hasOne(Clothing::class,'id','clothing_id');
     }
 }

@@ -13,7 +13,7 @@ class CreatureController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
     public function index()
     {
@@ -25,7 +25,7 @@ class CreatureController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function update(UpdateCreatureRequest $request)
     {
@@ -39,7 +39,7 @@ class CreatureController extends Controller
         $findData->cleanness = $data["cleanness"];
         $findData->save();
         return response()->json([
-            "data" => ["message" => "Sikeres Adatfrissítés"]
+            "data" => ["message" => "Sikeres Adatfrissítés !"]
         ],201);
     }
 }

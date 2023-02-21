@@ -11,6 +11,6 @@ class Food extends Model
     public $timestamps = false;
     protected $fillable = ["name","health_amount","energy_amount","nutritious_amount"];
     public function food() {
-        $this->hasMany(CreatureFood::class,'food_type_id','id');
+        return $this->hasMany(CreatureFood::class,'food_type_id','id');
     }
 }

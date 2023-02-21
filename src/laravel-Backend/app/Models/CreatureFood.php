@@ -11,9 +11,9 @@ class CreatureFood extends Model
     public $timestamps = false;
     protected $fillable = ["creature_id","food_id","amount"];
     public function foodtype() {
-        $this->hasOne(Food::class,'id','food_id');
+        return $this->hasOne(Food::class,'id','food_id');
     }
     public function creature() {
-        $this->hasOne(Creature::class,'id','creature_id');
+        return $this->hasOne(Creature::class,'id','creature_id');
     }
 }
