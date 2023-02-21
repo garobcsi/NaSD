@@ -6,7 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class FoodTypeSeeder extends Seeder
+class FoodSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,7 +15,7 @@ class FoodTypeSeeder extends Seeder
      */
     public function run()
     {
-        DB::table("food_type")->insert([
+        DB::table("food")->insert([
             [
                 "id" => 1,
                 "name" => "Sushi",

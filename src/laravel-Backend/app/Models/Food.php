@@ -7,13 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Food extends Model
 {
-    protected $table = "food";
+    protected $table = "food_type";
     public $timestamps = false;
-    protected $fillable = ["creature_id","food_type_id","amount"];
-    public function foodtype() {
-        $this->hasOne(FoodType::class,'id','food_type_id');
-    }
-    public function creature() {
-        $this->hasOne(Creature::class,'id','creature_id');
+    protected $fillable = ["name","health_amount","nutritious_amount"];
+    public function food() {
+        $this->hasMany(CreatureFood::class,'food_type_id','id');
     }
 }

@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\RegisterRequest;
 use App\Models\Creature;
+use App\Models\CreatureFood;
 use App\Models\Food;
-use App\Models\FoodType;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -27,9 +27,9 @@ class RegisterController extends Controller
             "cleanness" => 100,
         ]);
         $creatureid = Creature::all()->where('user_id',$userid)->first()->id;
-        foreach (FoodType::all() as $i) {
+        foreach (Food::all() as $i) {
             $id = $i->id;
-            Food::create([
+            CreatureFood::create([
                 "creature_id" => $creatureid,
                 "food_type_id" => $id,
                 "amount" => 0,
