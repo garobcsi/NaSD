@@ -344,7 +344,7 @@
 			"response": []
 		},
 		{
-			"name": "Get Show User Clothing Copy",
+			"name": "Get Show User Clothing",
 			"request": {
 				"auth": {
 					"type": "bearer",
