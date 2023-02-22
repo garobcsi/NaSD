@@ -9,6 +9,7 @@ use App\Models\CreatureFood;
 use App\Models\Food;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 
 class FoodController extends Controller
 {
@@ -27,16 +28,19 @@ class FoodController extends Controller
         return FoodResource::collection($data);
     }
 
-//    /**
-//     * Display the specified resource.
-//     *
-//     * @param  int  $id
-//     * @return \Illuminate\Http\Response
-//     */
-//    public function show($id)
-//    {
-//        //
-//    }
+    /**
+     * @param $id
+     * @return FoodResource|JsonResponse
+     */
+    public function show($id)
+    {
+        $findCreatureId = Creature::all()->where('user_id',auth('sanctum')->user()->id)->firstOrFail()->id;
+        $data = CreatureFood::all()->where('creature_id',$findCreatureId)->where('food_id',$id);
+        if ($data->isEmpty()) return response()->json([
+            "data" => ["message" => "Nem találtunk adatot !"]
+        ],404);
+        return new FoodResource($data->first());
+    }
 
     /**
      * Update the specified resource in storage.

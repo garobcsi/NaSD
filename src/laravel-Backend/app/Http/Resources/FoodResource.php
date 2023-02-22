@@ -21,6 +21,7 @@ class FoodResource extends JsonResource
             "health_amount" => $this->food->health_amount,
             "energy_amount" => $this->food->energy_amount,
             "hunger_amount" => $this->food->hunger_amount,
+            "price" => $this->food->price,
             "amount" => $this->amount
         ];
     }

@@ -23,6 +23,7 @@ class FoodSeeder extends Seeder
                 "health_amount" => 2,
                 "energy_amount" => 0,
                 "hunger_amount" =>15,
+                "price" => 0
             ],
             [
                 "id" => 2,
@@ -31,14 +32,16 @@ class FoodSeeder extends Seeder
                 "health_amount" => 5,
                 "energy_amount" => 0,
                 "hunger_amount" =>10,
+                "price" => 0
             ],
             [
                 "id" => 3,
                 "name" => "Húsleves",
                 "type" => "étel",
-                "health_amount" => 5,
+                "health_amount" => 7,
                 "energy_amount" => 0,
                 "hunger_amount" =>15,
+                "price" => 0
             ],
             [
                 "id" => 4,
@@ -47,23 +50,25 @@ class FoodSeeder extends Seeder
                 "health_amount" => -1,
                 "energy_amount" => 0,
                 "hunger_amount" =>30,
+                "price" => 0
             ],
             [
                 "id" => 5,
-
                 "name" => "Sajtburger",
                 "type" => "étel",
-                "health_amount" => -1,
+                "health_amount" => -2,
                 "energy_amount" => 0,
                 "hunger_amount" =>30,
+                "price" => 0
             ],
             [
                 "id" => 6,
                 "name" => "Sültburgonya",
                 "type" => "étel",
-                "health_amount" => -1,
+                "health_amount" => -2,
                 "energy_amount" => 0,
                 "hunger_amount" =>30,
+                "price" => 0
             ],
             [
                 "id" => 7,
@@ -72,14 +77,16 @@ class FoodSeeder extends Seeder
                 "health_amount" => -1,
                 "energy_amount" => 30,
                 "hunger_amount" =>1,
+                "price" => 0
             ],
             [
                 "id" => 8,
                 "name" => "Energia ital",
                 "type" => "ital",
-                "health_amount" => -3,
+                "health_amount" => -5,
                 "energy_amount" => 45,
                 "hunger_amount" =>2,
+                "price" => 0
             ],
             [
                 "id" => 9,
@@ -88,6 +95,7 @@ class FoodSeeder extends Seeder
                 "health_amount" => 2,
                 "energy_amount" => 15,
                 "hunger_amount" =>2,
+                "price" => 0
             ],
             [
                 "id" => 10,
@@ -96,6 +104,7 @@ class FoodSeeder extends Seeder
                 "health_amount" => 4,
                 "energy_amount" => 5,
                 "hunger_amount" =>4,
+                "price" => 0
             ],
             [
                 "id" => 11,
@@ -104,14 +113,16 @@ class FoodSeeder extends Seeder
                 "health_amount" => 30,
                 "energy_amount" => 0,
                 "hunger_amount" =>0,
+                "price" => 0
             ],
             [
                 "id" => 12,
                 "name" => "Energia bomba",
                 "type" => "gyógyszer",
                 "health_amount" => -5,
-                "energy_amount" => 30,
+                "energy_amount" => 100,
                 "hunger_amount" =>0,
+                "price" => 0
             ],
             [
                 "id" => 13,
@@ -119,7 +130,8 @@ class FoodSeeder extends Seeder
                 "type" => "gyógyszer",
                 "health_amount" => -5,
                 "energy_amount" => 0,
-                "hunger_amount" =>30,
+                "hunger_amount" =>100,
+                "price" => 0
             ],
         ]);
     }

@@ -5,29 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:csharp_Admin"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize" Background="#1d7874"
-        WindowStartupLocation="CenterScreen">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1*"></ColumnDefinition>
-            <ColumnDefinition Width="1*"></ColumnDefinition>
-            <ColumnDefinition Width="1*"></ColumnDefinition>
-            <ColumnDefinition Width="1*"></ColumnDefinition>
-            <ColumnDefinition Width="1*"></ColumnDefinition>
-            <ColumnDefinition Width="1*"></ColumnDefinition>
-            <ColumnDefinition Width="1*"></ColumnDefinition>
-            <ColumnDefinition Width="1*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="1*"></RowDefinition>
-            <RowDefinition Height="1*"></RowDefinition>
-            <RowDefinition Height="1*"></RowDefinition>
-            <RowDefinition Height="1*"></RowDefinition>
-            <RowDefinition Height="1*"></RowDefinition>
-            <RowDefinition Height="1*"></RowDefinition>
-            <RowDefinition Height="1*"></RowDefinition>
-            <RowDefinition Height="1*"></RowDefinition>
-        </Grid.RowDefinitions>
-        
-    </Grid>
+        Title="NaSD" Height="585" Width="1040" Background="Black" Topmost="False" ResizeMode="NoResize" WindowState="Normal" WindowStartupLocation="CenterScreen">
+    <Viewbox Stretch="Uniform">
+        <Grid Background="#1d7874" Height="457" Width="858">
+            <Frame Name="Page1" Source="/Pages/Page1.xaml" Visibility="{Binding Visibility_Page1}"/>
+            <Frame Name="Page2" Source="/Pages/Page2.xaml" Visibility="{Binding Visibility_Page2}"/>
+            <Frame Name="Page3" Source="/Pages/Page3.xaml" Visibility="{Binding Visibility_Page3}"/>
+            <Frame Name="Page4" Source="/Pages/Page4.xaml" Visibility="{Binding Visibility_Page4}"/>
+            <Frame Name="Page5" Source="/Pages/Page5.xaml" Visibility="{Binding Visibility_Page5}"/>
+            <Frame Name="Page6" Source="/Pages/Page6.xaml" Visibility="{Binding Visibility_Page6}"/>
+        </Grid>
+    </Viewbox>
 </Window>

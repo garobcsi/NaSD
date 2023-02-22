@@ -1,4 +1,5 @@
-﻿using System;
+﻿using csharp_Admin.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,17 @@ namespace csharp_Admin
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static MainWindowModel context = new MainWindowModel();
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = context;
+            MainWindow.context.MakeVisible("Page2");
+            this.PreviewKeyDown += new KeyEventHandler(HandleKeyboard);
+        }
+        private void HandleKeyboard(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Escape) MainWindow.context.MakeVisible("Page1");
         }
     }
 }

@@ -8,6 +8,7 @@ use App\Http\Resources\ClothingResource;
 use App\Models\Clothing;
 use App\Models\Creature;
 use App\Models\CreatureClothing;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
 class ClothingController extends Controller
@@ -24,6 +25,20 @@ class ClothingController extends Controller
             "data" => ["message" => "Nem találtunk adatot !"]
         ],404);
         return ClothingResource::collection($data);
+    }
+
+    /**
+     * @param $id
+     * @return ClothingResource|JsonResponse
+     */
+    public function show($id)
+    {
+        $findCreatureId = Creature::all()->where('user_id',auth('sanctum')->user()->id)->firstOrFail()->id;
+        $data = CreatureClothing::all()->where('creature_id',$findCreatureId)->where('clothing_id',$id);
+        if ($data->isEmpty()) return response()->json([
+            "data" => ["message" => "Nem találtunk adatot !"]
+        ],404);
+        return new ClothingResource($data->first());
     }
 
     /**
