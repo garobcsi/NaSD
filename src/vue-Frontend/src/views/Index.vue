@@ -1,18 +1,7 @@
 <template>
   <NavBar></NavBar>
-  <div class="container-fluid">
+  <div class="container-fluid body">
     <div class="row">
-      <div class="col">
-        Index
-      </div>
-      <div class="col">
-        Index
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        Index
-      </div>
       <div class="col">
         Index
       </div>
@@ -28,6 +17,9 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+.body{
+  height: 100%;
+  background-color: #bac7a7;
+}
 </style>
