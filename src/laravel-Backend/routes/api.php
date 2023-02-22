@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\AdminAllCreaturesController;
+use App\Http\Controllers\AdminAllUsersClothingController;
+use App\Http\Controllers\AdminAllUsersController;
+use App\Http\Controllers\AdminAllUsersFoodController;
 use App\Http\Controllers\AllClothingController;
 use App\Http\Controllers\AllFoodController;
 use App\Http\Controllers\AuthController;
@@ -41,8 +45,22 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::get('/food',[FoodController::class,'index'])->name('food');
     Route::get('/food/{id}',[FoodController::class,'show'])->name('food.show');
     Route::put('/food/{id}',[FoodController::class,'update'])->name('food.store');
+
+    //Admins ONLY
+    Route::get('/admin/all/users',[AdminAllUsersController::class,'index'])->name('admin.all.users');
+    Route::get('/admin/all/users/{id}',[AdminAllUsersController::class,'show'])->name('admin.all.users.show');
+
+    Route::get('/admin/all/creatures',[AdminAllCreaturesController::class,'index'])->name('admin.all.creatures');
+    Route::get('/admin/all/creatures/{id}',[AdminAllCreaturesController::class,'show'])->name('admin.all.creatures.show');
+
+    Route::get('/admin/all/food',[AdminAllUsersFoodController::class,'index'])->name('admin.all.food');
+    Route::get('/admin/all/food/{id}',[AdminAllUsersFoodController::class,'show'])->name('admin.all.food.show');
+
+    Route::get('/admin/all/clothing',[AdminAllUsersClothingController::class,'index'])->name('admin.all.clothing');
+    Route::get('/admin/all/clothing/{id}',[AdminAllUsersClothingController::class,'show'])->name('admin.all.clothing.show');
+
 });
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return new UserResource($request->user());
-});
+})->name('user');
