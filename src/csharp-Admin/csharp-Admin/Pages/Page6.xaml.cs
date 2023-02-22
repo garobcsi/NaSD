@@ -18,11 +18,13 @@ namespace csharp_Admin.Pages
     /// <summary>
     /// Interaction logic for Page6.xaml
     /// </summary>
-    public partial class Page6 : Page
+    public partial class Pages6 : Page
     {
-        public Page6()
+        public static Pages6 Instance { get; set; }
+        public Pages6()
         {
             InitializeComponent();
+            Instance = this;
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿<Page x:Class="csharp_Admin.Pages.Page1"
+﻿<Page x:Class="csharp_Admin.Pages.Pages1"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -8,7 +8,92 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page1">
 
-    <Grid>
-        <Label>1</Label>
+    <Grid  Background="#1d7874">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.4*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="0.5*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="0.5*" />
+        </Grid.RowDefinitions>
+
+        <Border Margin="2" 
+                Grid.Row="1"
+                Grid.Column="1"
+                Grid.ColumnSpan="4"
+                Grid.RowSpan="2"
+                BorderBrush="Black"
+                BorderThickness="5">
+            <Label Name="l1"
+                   HorizontalContentAlignment="Center" 
+                   VerticalContentAlignment="Center"   
+                   FontSize="50">
+                NaSD
+            </Label>
+        </Border>
+        <!---->
+        <!---->
+        <Label Margin="150,0,150,0" MouseLeftButtonUp="MouseLeftButtonUp"
+               Grid.Row="4" 
+               Grid.Column="1" 
+               Grid.ColumnSpan="4" 
+               Background="Transparent" 
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center" FontSize="25"
+               Name="Page2"
+               >Felhasználók</Label>
+        <!---->
+        <Label Margin="150,0,150,0" MouseLeftButtonUp="MouseLeftButtonUp"
+               Grid.Row="5" 
+               Grid.Column="1" 
+               Grid.ColumnSpan="4" 
+               Background="Transparent" 
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center" FontSize="25"
+               Name="Page3"
+               >Állatok</Label>
+        <!---->
+        <Label Margin="150,0,150,0" MouseLeftButtonUp="MouseLeftButtonUp"
+               Grid.Row="6" 
+               Grid.Column="1" 
+               Grid.ColumnSpan="4" 
+               Background="Transparent" 
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center" FontSize="25"
+               Name="Page4"
+               >Öszess Ruha</Label>
+        <!---->
+        <Label Margin="150,0,150,0" MouseLeftButtonUp="MouseLeftButtonUp"
+               Grid.Row="7" 
+               Grid.Column="1" 
+               Grid.ColumnSpan="4" 
+               Background="Transparent" 
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center" FontSize="25" 
+               Name="Page5"
+               >Öszess Étel</Label>
+        <!---->
+        <Label Margin="50,0,50,0" MouseLeftButtonUp="MouseLeftButtonUp"
+               Grid.Row="7"
+               Grid.Column="4" 
+               Grid.ColumnSpan="2" 
+               Background="Transparent" 
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center" FontSize="25" 
+               Name="Quit"
+               >Kilépés</Label>
+        <!---->
     </Grid>
 </Page>

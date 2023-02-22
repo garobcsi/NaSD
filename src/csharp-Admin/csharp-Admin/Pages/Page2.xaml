@@ -1,4 +1,4 @@
-﻿<Page x:Class="csharp_Admin.Pages.Page2"
+﻿<Page x:Class="csharp_Admin.Pages.Pages2"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -9,6 +9,6 @@
       Title="Page2">
 
     <Grid>
-        <Label>2</Label>
+        <Label Name="lb1">2</Label>
     </Grid>
 </Page>
