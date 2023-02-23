@@ -1,21 +1,24 @@
 <template>
   <div class="container-fluid d-flex justify-content-between body">
-    <div class="col mt-1">
-      <div class="progress" style="width: 3rem; height: 3rem; transform: rotate(-90deg)" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar" :style="{'width': food + '%', 'background-color': statusColor}"></div>
+    <div class="col m-2">
+      <div class="row">
+        <div class="col">
+          <div class="progress statusbox border border-dark" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar percentstatus" :style="{'width': food + '%', 'background-color': statusColor}"></div>
+            <i class="icofont-fork-and-knife  position-absolute top-50 start-50 translate-middle icon" ></i>
+          </div>
+        </div>
       </div>
-        <i class="icofont-fork-and-knife"></i>
     </div>
     <div class="col"></div>
   </div>
 </template>
-
 <script>
 export default {
   name: "GameInformation",
   data(){
     return{
-      food:29,
+      food:10,
       energy:50,
       clean:50,
       mood:50,
@@ -42,7 +45,19 @@ export default {
 
 <style scoped>
 .body{
-  background-color: ;
+  background-color: #9ec5fe;
 }
+.statusbox{
+  width: 4rem;
+  height: 4rem;
+  transform: rotate(-90deg);
+  padding: 0;
+  background-color: white; 
+}
+.icon{
+  font-size: 2rem;
+  transform: rotate(90deg);
+  z-index: auto;
 
+}
 </style>
