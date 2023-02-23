@@ -15,17 +15,27 @@ namespace csharp_Admin.Api
         HttpClient client = new HttpClient();
         public RestApiKezelo()
         {
-            client.BaseAddress = new Uri("http://localhost:5000/");
+            client.BaseAddress = new Uri("http://localhost:5000");
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders
                 .Accept
                 .Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
         }
-        public DataAllClothing GetAllClothing(string path)
+        public DataAllFood GetAllFood()
+        {
+            DataAllFood retval = null;
+            HttpResponseMessage response = client.GetAsync("/api/all/food").Result;
+            if (response.IsSuccessStatusCode)
+            {
+                retval = response.Content.ReadAsAsync<DataAllFood>().Result;
+            }
+            return retval;
+        }
+        public DataAllClothing GetAllClothing()
         {
             DataAllClothing retval = null;
-            HttpResponseMessage response = client.GetAsync(path).Result;
+            HttpResponseMessage response = client.GetAsync("/api/all/clothing").Result;
             if (response.IsSuccessStatusCode)
             {
                 retval = response.Content.ReadAsAsync<DataAllClothing>().Result;

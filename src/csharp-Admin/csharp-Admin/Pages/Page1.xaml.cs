@@ -38,12 +38,15 @@ namespace csharp_Admin.Pages
                     break;
                 case "Page3":
                     MainWindow.context.MakeVisible("Page3");
+                    Pages3.Load();
                     break;
                 case "Page4":
                     MainWindow.context.MakeVisible("Page4");
+                    Pages4.Load();
                     break;
                 case "Page5":
                     MainWindow.context.MakeVisible("Page5");
+                    Pages5.Load();
                     break;
                 case "Page6":
                     MainWindow.context.MakeVisible("Page6");

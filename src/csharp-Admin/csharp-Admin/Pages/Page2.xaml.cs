@@ -29,21 +29,12 @@ namespace csharp_Admin.Pages
             InitializeComponent();
             Instance = this;
         }
-        public async static void Load()
+        public static void Load()
         {
-            //using (HttpClient client = new HttpClient())
-            //{
+            RestApiKezeloBearerToken api = new RestApiKezeloBearerToken();
+            DataAdminAllUsers resp = api.GetAdminAllUsers();
+            Instance.DG.ItemsSource = resp.data;
 
-            //    HttpResponseMessage resp = await client.GetAsync("http://localhost:5000/api/all/clothing");
-            //    resp.EnsureSuccessStatusCode();
-
-            //    List<AllClothing> data = serializerForInternal.Deserialize(resp);
-            //    Instance.lb1.Content = data[23].id;
-
-            //}
-            //RestApiKezelo test = new RestApiKezelo("http://localhost:5000/api/all/clothing");
-            //DataAllClothing data = test.GetAllClothing("");
-            //Instance.lb1.Content = data.data[20].id;
         }
     }
 }

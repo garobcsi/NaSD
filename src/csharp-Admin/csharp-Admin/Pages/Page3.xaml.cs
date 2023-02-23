@@ -1,4 +1,6 @@
-﻿using System;
+﻿using csharp_Admin.Api;
+using csharp_Admin.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,6 +27,13 @@ namespace csharp_Admin.Pages
         {
             InitializeComponent();
             Instance = this;
+        }
+        public static void Load()
+        {
+            RestApiKezeloBearerToken api = new RestApiKezeloBearerToken();
+            DataAdminAllCreatures resp = api.GetAdminAllCreatures();
+            Instance.DG.ItemsSource = resp.data;
+
         }
     }
 }

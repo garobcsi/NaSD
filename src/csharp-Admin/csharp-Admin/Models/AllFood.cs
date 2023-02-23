@@ -6,16 +6,18 @@ using System.Threading.Tasks;
 
 namespace csharp_Admin.Models
 {
-    public class DataAllClothing
+    public class DataAllFood
     {
-        public List<AllClothing> data { get; set; }
+        public List<AllFood> data { get; set; }
     }
-    public class AllClothing
+    public class AllFood
     {
         public int id { get; set; }
         public string name { get; set; }
         public string type { get; set; }
-        public string color { get; set; }
+        public int health_amount { get; set; }
+        public int energy_amount { get; set; }
+        public int hunger_amount { get; set; }
         public int price { get; set; }
     }
 }

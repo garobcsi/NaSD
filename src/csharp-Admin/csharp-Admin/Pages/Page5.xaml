@@ -9,6 +9,17 @@
       Title="Page5">
 
     <Grid>
-        <Label>5</Label>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.13*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" >
+            <Label Margin="10" FontSize="15">
+                A kilépéshez nyomja meg az ESC gombot
+            </Label>
+        </StackPanel>
+        <DataGrid Margin="15" Name="DG" Grid.Row="1" RowHeight="30" ColumnWidth="100" IsReadOnly="True">
+
+        </DataGrid>
     </Grid>
 </Page>
