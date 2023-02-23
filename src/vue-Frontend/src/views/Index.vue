@@ -20,6 +20,6 @@ export default {
 <style scoped lang="scss">
 .body{
   height: 100%;
-  background-color: #bac7a7;
+  background-color: #cfe2ff;
 }
 </style>
