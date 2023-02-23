@@ -2,7 +2,7 @@
   <NavBar></NavBar>
   <div class="container-fluid body">
     <div class="row d-flex justify-content-center">
-      <div class="col-10 col-sm-6 col-lg-4 col-xxl-2">
+      <div class="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-4 col-xxl-3">
         <form class="mt-5 p-3 rounded-4">
           <fieldset>
             <legend class="text-center">Regisztráció</legend>
