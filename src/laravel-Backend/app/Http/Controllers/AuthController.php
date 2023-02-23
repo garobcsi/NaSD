@@ -17,7 +17,7 @@ class AuthController extends Controller
         if (!$request->wantsJson()) return;
         if(Auth::attempt($request->validated())) {
             $user = Auth::user();
-            $user->tokens()->where('tokenable_id', $user->id)->delete();
+            //$user->tokens()->where('tokenable_id', $user->id)->delete(); //Generate token and delete old one
             $token = $user->createToken('auth_token')->plainTextToken;
             return response()->json([
                 "data" => [ "token" => $token ]

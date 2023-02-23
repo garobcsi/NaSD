@@ -26,7 +26,7 @@ namespace csharp_Admin
         {
             InitializeComponent();
             this.DataContext = context;
-            MainWindow.context.MakeVisible("Page2");
+            MainWindow.context.MakeVisible("Page1");
             this.PreviewKeyDown += new KeyEventHandler(HandleKeyboard);
         }
         private void HandleKeyboard(object sender, KeyEventArgs e)

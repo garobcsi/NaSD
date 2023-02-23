@@ -1,6 +1,9 @@
-﻿using System;
+﻿using csharp_Admin.Api;
+using csharp_Admin.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -18,11 +21,20 @@ namespace csharp_Admin.Pages
     /// <summary>
     /// Interaction logic for Page2.xaml
     /// </summary>
-    public partial class Page2 : Page
+    public partial class Pages2 : Page
     {
-        public Page2()
+        public static Pages2 Instance { get; set; }
+        public Pages2()
         {
             InitializeComponent();
+            Instance = this;
+        }
+        public static void Load()
+        {
+            RestApiKezeloBearerToken api = new RestApiKezeloBearerToken();
+            DataAdminAllUsers resp = api.GetAdminAllUsers();
+            Instance.DG.ItemsSource = resp.data;
+
         }
     }
 }

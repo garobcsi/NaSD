@@ -18,11 +18,43 @@ namespace csharp_Admin.Pages
     /// <summary>
     /// Interaction logic for Page1.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class Pages1 : Page
     {
-        public Page1()
+        public Pages1()
         {
             InitializeComponent();
+        }
+
+        private void MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            switch ((sender as Label).Name)
+            {
+                case "Page1":
+                    MainWindow.context.MakeVisible("Page1");
+                    break;
+                case "Page2":
+                    MainWindow.context.MakeVisible("Page2");
+                    Pages2.Load();
+                    break;
+                case "Page3":
+                    MainWindow.context.MakeVisible("Page3");
+                    Pages3.Load();
+                    break;
+                case "Page4":
+                    MainWindow.context.MakeVisible("Page4");
+                    Pages4.Load();
+                    break;
+                case "Page5":
+                    MainWindow.context.MakeVisible("Page5");
+                    Pages5.Load();
+                    break;
+                case "Page6":
+                    MainWindow.context.MakeVisible("Page6");
+                    break;
+                case "Quit":
+                    Application.Current.Shutdown();
+                    break;
+            }
         }
     }
 }

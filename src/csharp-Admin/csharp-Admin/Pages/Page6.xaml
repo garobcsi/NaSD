@@ -1,4 +1,4 @@
-﻿<Page x:Class="csharp_Admin.Pages.Page6"
+﻿<Page x:Class="csharp_Admin.Pages.Pages6"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 

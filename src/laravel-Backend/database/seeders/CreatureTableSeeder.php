@@ -21,16 +21,29 @@ class CreatureTableSeeder extends Seeder
         \DB::table('creature')->insert(array (
             0 => 
             array (
+                'id' => 1,
+                'user_id' => 1,
+                'money' => 0,
+                'hunger' => 100,
+                'health' => 100,
+                'mood' => 100,
+                'energy' => 100,
                 'cleanness' => 100,
                 'created_at' => '2023-02-21 12:24:41',
-                'energy' => 100,
-                'health' => 100,
-                'hunger' => 100,
-                'id' => 1,
-                'money' => 0,
-                'mood' => 100,
                 'updated_at' => '2023-02-21 12:24:41',
-                'user_id' => 1,
+            ),
+            1 => 
+            array (
+                'id' => 2,
+                'user_id' => 2,
+                'money' => 0,
+                'hunger' => 100,
+                'health' => 100,
+                'mood' => 100,
+                'energy' => 100,
+                'cleanness' => 100,
+                'created_at' => '2023-02-22 12:41:31',
+                'updated_at' => '2023-02-22 12:41:31',
             ),
         ));
         
