@@ -2,11 +2,16 @@
 
 ### Quick navigation
 
+* **[:black_nib: About The Project](#black_nib-about-the-project)**
 * **[:keyboard: Useful Commands](#keyboard-useful-commands)**
 
 * **[:building_construction: Building the application](#building_construction-building-the-application)**
 
 * **[:busts_in_silhouette: Made By](#busts_in_silhouette-made-by)**
+
+# :black_nib: About The Project
+
+The project is about creating a Tamagotchi-style application with a humorous twist - instead of caring for a virtual pet, users will be caring for their virtual Dominik. The app will simulate the experience of being responsible for the well-being of a digital version of their Dominik, including feeding, cleaning, and entertaining them. The parody aspect of the project will add a lighthearted and entertaining element to the app, making it a fun and unique way to interact with their Dominik in a digital space.
 
 # :keyboard: Useful Commands
 
