@@ -9,10 +9,13 @@
           <li class="nav-item">
             <router-link class="nav-link" to="/review">A játékról</router-link>
           </li>
+          <li class="nav-item" v-show="logedin">
+            <router-link class="nav-link" to="/game/index">NaSD</router-link>
+          </li>
         </ul>
         <div class="btn-group mx-2">
-          <button class="btn btn-secondary btn-sm rounded-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="icofont-user-alt-3"></i>
+          <button class="btn btn-secondary btn-sm rounded-5" style="width: 3rem;height: 3rem" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="icofont-user-alt-3" style="font-size: 1.5rem"></i>
           </button>
           <ul class="dropdown-menu dropdown-menu-end">
             <li v-if="logedin"><router-link class="dropdown-item" to="#">Profil</router-link></li>
@@ -32,7 +35,7 @@ export default {
   name: "NavBar",
   data(){
     return{
-      "logedin" : false,
+      "logedin" : true,
 
     }
   }
